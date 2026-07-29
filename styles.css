@@ -25,13 +25,16 @@ header p {
 
 nav {
     background-color: #444;
-    padding: 10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
 }
 
@@ -126,4 +129,28 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #e06925;
+}
+
+/*modificaciones a cierto tamaño de pantalla ( Celulares)*/
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        background-color: white;
+
+    }
+
+    nav a {
+        color: #f10e52;
+    }
+
+    header h1 {
+        color: #0ce7e7;
+    }
+
+    main {
+        padding: 50px;
+        margin: 40px;
+        color: #427c40;
+    }
 }
