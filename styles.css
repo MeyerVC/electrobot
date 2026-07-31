@@ -137,6 +137,11 @@ button[type="submit"]:hover {
     color: #333;
     border: none;
     font-family: Arial, sans-serif;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 18px;
+    margin-bottom: 10px;
 }
 
 body.claro {
@@ -149,12 +154,47 @@ body.claro main {
     color: #e6dada;
 }
 
+body.claro h2 {
+    color: #40eb5c;
+}
 
+.boton-añadir {
+    background-color: #11e434;
+    color: rgb(53, 41, 41);
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 18px;
+    margin-bottom: 10px;
+}
+
+.carrito-icono {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hamburger-btn {
+    display: none;
+}
 
 /* Modificaciones a cierto tamaño de pantalla (Celulares) */
 @media (max-width: 600px) {
     header {
         padding: 15px 10px;
+    }
+
+    .hamburger-btn {
+        display: block;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 26px;
+        cursor: pointer;
+        padding: 5px 10px;
     }
 
     nav {
@@ -166,11 +206,16 @@ body.claro main {
 
     nav a {
         color: white;
+        display: none;
+    }
+
+    nav.activo a {
+        display: block;
+        padding: 6px 0;
     }
 
     main {
         padding: 15px;
         margin: 10px;
     }
-
 }
