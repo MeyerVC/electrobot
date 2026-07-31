@@ -131,26 +131,25 @@ button[type="submit"]:hover {
     background-color: #e06925;
 }
 
-/*modificaciones a cierto tamaño de pantalla ( Celulares)*/
+/* Modificaciones a cierto tamaño de pantalla (Celulares) */
 @media (max-width: 600px) {
+    header {
+        padding: 15px 10px;
+    }
+
     nav {
         flex-direction: column;
         gap: 10px;
-        background-color: white;
-
+        background-color: #444;
+        padding: 12px;
     }
 
     nav a {
-        color: #f10e52;
-    }
-
-    header h1 {
-        color: #0ce7e7;
+        color: white;
     }
 
     main {
-        padding: 50px;
-        margin: 40px;
-        color: #427c40;
+        padding: 15px;
+        margin: 10px;
     }
 }
