@@ -131,6 +131,26 @@ button[type="submit"]:hover {
     background-color: #e06925;
 }
 
+/* Modo Día */
+.boton-modo {
+    background-color: #d32626;
+    color: #333;
+    border: none;
+    font-family: Arial, sans-serif;
+}
+
+body.claro {
+    background-color: #242222;
+    color: #e6dada;
+}
+
+body.claro main {
+    background-color: #000000;
+    color: #e6dada;
+}
+
+
+
 /* Modificaciones a cierto tamaño de pantalla (Celulares) */
 @media (max-width: 600px) {
     header {
@@ -152,4 +172,5 @@ button[type="submit"]:hover {
         padding: 15px;
         margin: 10px;
     }
+
 }
