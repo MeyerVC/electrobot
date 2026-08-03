@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="inicio">
         <h1>Barbería Don Fígaro</h1>
         <p>Un corte de pelo es una declaración de intenciones.</p>
     </header>
@@ -22,9 +22,9 @@
     </nav>
 
     <main>
-        <section id="inicio">
-            <p>Bienbenido a barberia don figaro, el mejor lugar para cortar tu pelo.</p>
-        </section>
+
+        <p>Bienbenido a barberia don figaro, el mejor lugar para cortar tu pelo.</p>
+
         <section id="servicios">
             <h2>Servicios</h2>
             <p>contamos con los siguientes servicios:</p>
@@ -37,13 +37,22 @@
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam id quisquam blanditiis tempore
-                eligendi distinctio amet labore placeat? Et possimus dolore harum quae modi eaque quod quidem laboriosam
-                aut qui.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, dolorem! Ipsum, odio minima deleniti culpa
-                accusantium adipisci nesciunt illum quam libero quis magnam quae reiciendis delectus expedita, facilis,
-                repellat totam!</p>
-
+            <form>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+            </form>
+            <button id="btn-enviar">Enviar</button>
+            <p id="msj-enviado"></p>
         </section>
     </main>
 
