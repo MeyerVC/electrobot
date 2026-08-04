@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbería Don Fígaro</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -26,36 +27,41 @@
         <p>Bienbenido a barberia don figaro, el mejor lugar para cortar tu pelo.</p>
 
         <section id="servicios">
-            <h2>Servicios</h2>
+            <h2>Nuestros Servicios</h2>
             <p>contamos con los siguientes servicios:</p>
             <ul>
-                <li>Corte de pelo: 20bs</li>
-                <li>Barba: 10bs</li>
-                <li>Corte de pelo y barba: 25bs</li>
+                <li>Corte clasico: 25bs</li>
+                <li>Barba: 20bs</li>
+                <li>Corte de pelo y barba: 40bs</li>
             </ul>
 
         </section>
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2>Reserva tu turno</h2>
             <form>
                 <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
                 </div>
                 <div>
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correo" name="correo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
                 </div>
                 <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje"></textarea>
+                    <label for="comentario">Tu comentario</label>
+                    <textarea id="comentario" name="comentario"></textarea>
                 </div>
             </form>
-            <button id="btn-enviar">Enviar</button>
-            <p id="msj-enviado"></p>
+            <button type="button" id="btn-confirmar">Confirmar turno</button>
+            <p id="mensaje" class="oculto"></p>
         </section>
     </main>
 
+    <footer>
+        <p>Parcial 1 - Meyer Jhonatan Velasco Churata - 3 de agosto de 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
