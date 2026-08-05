@@ -219,3 +219,14 @@ body.claro h2 {
         margin: 10px;
     }
 }
+
+/* Avisos de validación de formulario (Clase 7) */
+.error {
+    color: #d32626;
+    font-weight: bold;
+}
+
+.exito {
+    color: #237D32;
+    font-weight: bold;
+}
