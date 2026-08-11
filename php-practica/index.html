@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrobot - Componentes de Electrónica y Robótica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Electrobot</h1>
+        <p class="leyenda">Tu tienda de Electrónica y Robótica</p>
+        <button id="btn-tema" class="boton-modo">🌞 Modo Día</button>
+    </header>
+
+    <nav>
+        <button id="btn-hamburger" class="hamburger-btn" aria-label="Menú">☰</button>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Sobre Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <button id="añadir-prod" class="boton-añadir">Añadir al carrito</button>
+            <span class="carrito-icono">🛒 <span id="contador-carrito">0</span></span>
+            <h2>Bienvenido a Electrobot</h2>
+            <p>
+                El propósito principal de esta página es mostrar una lista de componentes educativos y
+                placas de desarrollo junto con el precio de cada componente. Inicialmente, será utilizada
+                para visualizar los precios de manera más dinámica y así facilitar la consulta dentro de
+                nuestra tienda física. Más adelante, este proyecto se convertirá en un sistema completo
+                online para comercio electrónico.
+            </p>
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Placa de circuito electrónico">
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Componentes Destacados</h2>
+            <p>Conoce algunos de los componentes más buscados por nuestros clientes y estudiantes:</p>
+            <ul>
+                <li>Placa Arduino Uno R3</li>
+                <li>Módulo Bluetooth HC-05</li>
+                <li>Sensor Ultrasónico HC-SR04</li>
+                <li>Placa de Desarrollo ESP32</li>
+                <li>Kit de Resistencias</li>
+                <li>Servomotor SG90</li>
+            </ul>
+        </section>
+
+        <section id="nosotros">
+            <h2>Sobre el Proyecto</h2>
+            <p>
+                Desarrollado por <strong>Meyer Jhonatan Velasco Churata</strong>. Este proyecto
+                consiste en un sistema web local para la gestión y visualización del catálogo de
+                la tienda de electrónica Electrobot.
+            </p>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="form-pedido" method="post" action="procesar.php" novalidate>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="tu@correo.com">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+                <button type="submit">Enviar pedido</button>
+                <p id="error-pedido"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Electrobot Electrónica y Robótica. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>
