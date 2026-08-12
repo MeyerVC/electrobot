@@ -16,7 +16,7 @@ function revisarPedido(event) {
         avisoCita.classList.add("error");
         avisoCita.classList.remove("exito");
     } else {
-        avisoCita.textContent = `Cita reservada - te atiende ${nombre}`;
+        avisoCita.textContent = `Cita reservada - te atiende Meyer Jhonatan Velasco churata`;
         avisoCita.classList.add("exito");
         avisoCita.classList.remove("error");
     }
