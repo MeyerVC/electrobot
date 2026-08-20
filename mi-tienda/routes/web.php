@@ -4,13 +4,15 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Producto;
 
 Route::get('/', function () {
-    return view('welcome');
+    $productos = Producto::all();
+    return view('inicio', ['productos' => $productos]);
 });
  Route::get('/xd', function(){
     return 'HOLA MUNDO DESDE LARAVEL';
  });
  Route::get('/inicio', function(){
-    return view('inicio');
+    $productos = Producto::all();
+    return view('inicio', ['productos' => $productos]);
  });
  Route::get ('/productos', function(){
     $productos = Producto::all();

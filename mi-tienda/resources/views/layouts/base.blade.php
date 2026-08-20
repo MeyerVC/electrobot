@@ -22,7 +22,6 @@
         <a href="/productos">Productos</a>
         <a href="/nosotros">Sobre Nosotros</a>
         <a href="/contacto">Contacto</a>
-        <a href="/herramientas">Herramientas</a>
     </nav>
 
     <main>

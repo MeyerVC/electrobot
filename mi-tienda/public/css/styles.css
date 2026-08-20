@@ -244,3 +244,74 @@ body.claro h2 {
     color: #237D32;
     font-weight: bold;
 }
+
+/* Buscador de productos */
+.buscador-container {
+    margin: 20px auto;
+    width: 80%;
+    position: relative;
+    z-index: 100;
+}
+
+.buscador-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.lista-resultados {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.claro .lista-resultados {
+    background-color: #242222;
+    border-color: #444;
+}
+
+.lista-resultados li {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.claro .lista-resultados li {
+    border-bottom: 1px solid #444;
+}
+
+.lista-resultados li:hover {
+    background-color: #f0f0f0;
+}
+
+.claro .lista-resultados li:hover {
+    background-color: #333;
+}
+
+.producto-seleccionado {
+    font-size: 18px;
+    margin-left: 15px;
+    font-weight: bold;
+    color: #237D32;
+    vertical-align: middle;
+}
+
+.claro .producto-seleccionado {
+    color: #40eb5c;
+}
