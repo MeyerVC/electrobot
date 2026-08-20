@@ -29,6 +29,11 @@
                 <input type="number" id="precio" name="precio" step="0.01" required>
             </p>
 
+            <p>
+                <label for="stock">Stock:</label><br>
+                <input type="number" id="stock" name="stock" required>
+            </p>
+
             <p><button type="submit">Guardar componente</button></p>
         </form>
 

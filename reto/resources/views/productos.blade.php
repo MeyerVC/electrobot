@@ -9,6 +9,7 @@
                     <li>
                         <strong>{{ $producto->nombre }}</strong> - Bs. {{ $producto->precio }}<br>
                         <em>{{ $producto->descripcion }}</em>
+                        <strong>Stock:</strong> {{ $producto->stock }}
                     </li>
                 @endforeach
             </ul>
